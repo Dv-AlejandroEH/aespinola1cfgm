@@ -7,18 +7,16 @@
 </head>
 <body>
     <script>
-        function recuentoDeCifras(){
-            let numero1 = 0;
-            numero1 = parseInt(
-                prompt("Introduzca un número positivo de una o dos cifras")
-            );
-            if (numero1 < 10) {
+        function recuentoDeCifras(num1){
+            if (num1 < 10) {
                 return "El número introducido es de 1 cifra"
             } else {
                 return "El número introducido es de 2 cifras"
             }
         }
-        let resultadoTotal=recuentoDeCifras();
+        let numero1 = 0;
+        numero1 = parseInt(prompt("Introduzca un número positivo de una o dos cifras"));
+        let resultadoTotal=recuentoDeCifras(numero1);
         document.write(resultadoTotal);
     </script>
 </body>

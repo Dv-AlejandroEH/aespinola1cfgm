@@ -8,44 +8,33 @@
 <body>
     <script>
         function sumaFuncion(num1, num2){
-            numero1 = parseInt(prompt("Introduzca el primer número"));
-            numero2 = parseInt(prompt("Introduzca el segundo número"));
-            suma = numero1 + numero2;
+            suma = num1 + num2;
             return suma
         }
         function diferenciaFuncion(num1, num2){
-            numero1 = parseInt(prompt("Introduzca el primer número"));
-            numero2 = parseInt(prompt("Introduzca el segundo número"));
-            diferencia = numero1 - numero2;
+            diferencia = num1 - num2;
             return diferencia
         }
         function productoFuncion(num1, num2){
-            numero1 = parseInt(prompt("Introduzca el primer número"));
-            numero2 = parseInt(prompt("Introduzca el segundo número"));
-            producto = numero1 * numero2;
+            producto = num1 * num2;
             return producto
         }
         function divisionFuncion(num1,num2){
-            numero1 = parseInt(prompt("Introduzca el primer número"));
-            numero2 = parseInt(prompt("Introduzca el segundo número"));
-            division = numero2 / numero1;
+            division = num2 / num1;
             return division
         }
         function resultado(num1, num2){
-            let numero1 = 0, numero2 = 0;
-            numero1 = parseInt(prompt("Introduzca el primer número"));
-            numero2 = parseInt(prompt("Introduzca el segundo número"));
             if (numero1 > numero2) {
-                sumaFuncion()
-                diferenciaFuncion()
+                sumaFuncion(numero1, numero2)
+                diferenciaFuncion(numero1, numero2)
                 let documento1=document.write("El numero 1 es mayor al número 2 <br>");
                 let documento2=document.write("La suma de ambos números es: " + suma + "<br>");
                 let documento3=document.write("La diferencia de ambos números es: " + diferencia);
                 let textoEnPantalla=documento1+documento2+documento3
                 return ""
             } else {
-                productoFuncion()
-                divisionFuncion()
+                productoFuncion(numero1, numero2)
+                divisionFuncion(numero1, numero2)
                 let documento1=document.write("El numero 1 es menor al número 2 <br>");
                 let documento2=document.write("El producto de ambos números es: " + producto + "<br>");
                 let documento3=document.write("La división de ambos números es: " + division);
@@ -53,7 +42,10 @@
                 return ""
             }
         }
-        let resultadoTotal=resultado();
+        let numero1 = 0, numero2 = 0;
+        numero1 = parseInt(prompt("Introduzca el primer número"));
+        numero2 = parseInt(prompt("Introduzca el segundo número"));
+        let resultadoTotal=resultado(numero1, numero2);
         document.write(resultadoTotal);
     </script>
 </body>

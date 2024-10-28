@@ -7,20 +7,20 @@
 </head>
 <body>
     <script>
-        function comprueba(){
-            let valor = 0;
-            valor = parseInt(prompt("Introduzca un número"));
-            if (valor < 0) {
+        function comprueba(val){
+            if (val < 0) {
                 return "El valor introducido es negativo"
             } else {
-                if (valor > 0) {
+                if (val > 0) {
                 return "El valor introducido es positivo"
                 } else {
                 return "El valor introducido es 0"
                 }
             }
         }
-        let resultadoTotal=comprueba();
+        let valor = 0;
+        valor = parseInt(prompt("Introduzca un número"));
+        let resultadoTotal=comprueba(valor);
         document.write(resultadoTotal);
     </script>
 </body>

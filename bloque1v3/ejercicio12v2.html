@@ -7,16 +7,14 @@
 </head>
 <body>
     <script>
-        function comprobacion(){
-            let numero = 0;
-            numero = parseInt(prompt("Introduzca un número entero positivo"));
-            if (numero >= 0 && numero < 10) {
+        function comprobacion(num){
+            if (num >= 0 && num < 10) {
                 return "El número introducido es de 1 cifra"
             } else {
-                if (numero >= 10 && numero < 100) {
+                if (num >= 10 && num < 100) {
                 return "El número introducido es de 2 cifras"
                 } else {
-                if (numero >= 100 && numero < 1000) {
+                if (num >= 100 && num < 1000) {
                     return "El número introducido es de 3 cifras"
                 } else {
                     return "El número no es válido"
@@ -24,7 +22,9 @@
                 }
             }
         }
-        let resultadoTotal=comprobacion();
+        let numero = 0;
+        numero = parseInt(prompt("Introduzca un número entero positivo"));
+        let resultadoTotal=comprobacion(numero);
         document.write(resultadoTotal);
     </script>
 </body>

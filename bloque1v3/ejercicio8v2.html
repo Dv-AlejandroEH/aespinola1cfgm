@@ -7,19 +7,19 @@
 </head>
 <body>
     <script>
-        function calcularPromedio(){
-            let nota1 = 0, nota2 = 0, nota3 = 0, promedio = 0;
-            nota1 = parseInt(prompt("Introduzca la primera nota"));
-            nota2 = parseInt(prompt("Introduzca la segunda nota"));
-            nota3 = parseInt(prompt("Introduzca la tercera nota"));
-            promedio = (nota1 + nota2 + nota3) / 3;
+        function calcularPromedio(not1, not2, not3){
+            promedio = (not1 + not2 + not3) / 3;
             if (promedio >= 4) {
                 return "Regular"
             } else {
                 return "Reprobado"
             }
         }
-        let resultadoTotal=calcularPromedio();
+        let nota1 = 0, nota2 = 0, nota3 = 0, promedio = 0;
+        nota1 = parseInt(prompt("Introduzca la primera nota"));
+        nota2 = parseInt(prompt("Introduzca la segunda nota"));
+        nota3 = parseInt(prompt("Introduzca la tercera nota"));
+        let resultadoTotal=calcularPromedio(nota1, nota2, nota3);
         document.write(resultadoTotal);
     </script>
 </body>

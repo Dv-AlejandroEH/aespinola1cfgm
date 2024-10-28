@@ -7,15 +7,11 @@
 </head>
 <body>
     <script>
-        function comparacionNumerica() {
-            let numero1=0, numero2=0, numero3=0, resultado=0;
-            numero1=parseInt(prompt("Introduzca el primer número"));
-            numero2=parseInt(prompt("Introduzca el segundo número"));
-            numero3=parseInt(prompt("Introduzca el tercero número"));
-            if (numero1==numero2) {
-                if (numero1==numero3){
-                    if (numero2=numero3) {
-                        resultado=(numero1+numero2)*numero3
+        function comparacionNumerica(num1, num2, num3) {
+            if (num1==num2) {
+                if (num1==num3){
+                    if (num2=num3) {
+                        resultado=(num1+num2)*num3
                         return "El resultado es: "+resultado
                     } else {
                         return "Los números no son iguales"
@@ -27,7 +23,11 @@
                 return "Los números no son iguales"
             }
         }
-        let resultadoTotal=comparacionNumerica();
+        let numero1=0, numero2=0, numero3=0, resultado=0;
+        numero1=parseInt(prompt("Introduzca el primer número"));
+        numero2=parseInt(prompt("Introduzca el segundo número"));
+        numero3=parseInt(prompt("Introduzca el tercero número"));
+        let resultadoTotal=comparacionNumerica(numero1, numero2, numero3);
         document.write(resultadoTotal);
     </script>
 </body>

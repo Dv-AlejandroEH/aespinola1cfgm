@@ -7,13 +7,14 @@
   </head>
   <body>
     <script>
-      function mostrarNombreEdad(name, age){
+      function mostrarNombreEdad(){
         // Código anterior, obtener nombre y edad
-        return "El nombre es: "+name+" y la edad es: "+age
+        let nombre, edad;
+        nombre=prompt("Introduzca su nombre");
+        edad=parseInt(prompt("Introduzca su edad"));
+        return "El nombre es: "+nombre+" y la edad es: "+edad
       }
-      nombre=prompt("Introduzca su nombre");
-      edad=parseInt(prompt("Introduzca su edad"));
-      let resultado=mostrarNombreEdad(nombre, edad);
+      let resultado=mostrarNombreEdad();
       document.write(resultado);
     </script>
   </body>
