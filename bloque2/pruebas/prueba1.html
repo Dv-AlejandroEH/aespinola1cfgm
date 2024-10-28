@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba 1</title>
+</head>
+<body>
+    <script>
+        let palabra, acumulador=0;
+
+    // Opción con do while
+        /*
+        do{
+             palabra=prompt("Introduzca una de estas palabras en español para traducirlas al inglés: Gato, Perro, Lápiz, Casa");
+         } while (palabra!='Gato' && palabra!='Perro' && palabra!='Lápiz' && palabra!='Casa')
+        */
+
+    //Ahora lo haré solo con while
+        /*
+        palabra=prompt("Introduzca una de estas palabras en español para traducirlas al inglés: Gato, Perro, Lápiz, Casa");
+        while (palabra!='Gato' && palabra!='Perro' && palabra!='Lápiz' && palabra!='Casa') {
+            palabra=prompt("Introduzca una de estas palabras en español para traducirlas al inglés: Gato, Perro, Lápiz, Casa");
+        } 
+        */
+    // Opción con for
+        for (acumulador>0 ; acumulador<5; acumulador++) {
+            palabra=prompt("Introduzca una de estas palabras en español para traducirlas al inglés: Gato, Perro, Lápiz, Casa");
+        }
+                switch (palabra) {
+                    case 'Gato':
+                        document.write('La traducción es: Cat');
+                        break;
+                    case 'Perro':
+                        document.write('La traducción es: Dog');
+                        break;
+                    case 'Lápiz':
+                        document.write('La traducción es: Pencil');
+                        break;
+                    case 'Casa':
+                        document.write('La traducción es: House');
+                        break;
+                }
+        if (acumulador>5) {
+                document.write('Has excedido el número máximo de intentos');
+            }
+    </script>
+</body>
+</html>

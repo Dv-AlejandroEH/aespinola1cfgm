@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5v2</title>
+</head>
+<body>
+    <script>
+        function mostrarResultado(price, amount){
+            let resultado=price*amount;
+            return "El comprador debe de abonar: "+resultado+"€"
+        }
+        precio=parseInt(prompt("Introduzca el precio del artículo"));
+        cantidad=parseInt(prompt("Introduzca la cantidad de articulos que se ha llevado el cliente"));
+        let resultadoTotal=mostrarResultado(precio, cantidad);
+        document.write(resultadoTotal);
+    </script>
+</body>
+</html>

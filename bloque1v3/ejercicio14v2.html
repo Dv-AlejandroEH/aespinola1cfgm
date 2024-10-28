@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 14v2</title>
+</head>
+<body>
+    <script>
+        function calcularSueldo() {
+            let sueldo=0, añosDeAntiguedad=0, nuevoSueldo=0;
+            sueldo=parseInt(prompt("Introduzca el sueldo"));
+            añosDeAntiguedad=parseInt(prompt("Introduzca los años de antigüedad"));
+            if (sueldo<500 && añosDeAntiguedad>=10) {
+                nuevoSueldo=sueldo*0.2+sueldo
+                return "El nuevo sueldo es "+nuevoSueldo
+            } else {
+                if (sueldo<500 && añosDeAntiguedad<10) {
+                    nuevoSueldo=sueldo*0.05+sueldo
+                    return "El nuevo sueldo es "+nuevoSueldo
+                } else {
+                    if (sueldo>=500) {
+                        document.write("El sueldo es: "+sueldo);
+                    } else {
+                        return "El valor no es válido"
+                    }
+                }
+            }
+        }
+        let resultadoTotal=calcularSueldo();
+        document.write(resultadoTotal);
+    </script>
+</body>
+</html>

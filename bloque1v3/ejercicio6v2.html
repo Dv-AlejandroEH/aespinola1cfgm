@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6v2</title>
+</head>
+<body>
+    <script>
+        function mostrarClave(pssw1,pssw2){
+            if (pssw1 == pssw2) {
+                return "Las claves son iguales"
+            } else {
+                return "Las claves no son iguales"
+            }
+        }
+        clave1 = prompt("Introduzca la clave");
+        clave2 = prompt("Confirme la clave");
+        let clave=mostrarClave(clave1, clave2);
+        document.write(clave);
+    </script>
+</body>
+</html>

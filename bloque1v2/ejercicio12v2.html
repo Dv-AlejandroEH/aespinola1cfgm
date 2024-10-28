@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12v2</title>
+</head>
+<body>
+    <script>
+        function comprobacion(){
+            let numero = 0;
+            numero = parseInt(prompt("Introduzca un número entero positivo"));
+            if (numero >= 0 && numero < 10) {
+                return "El número introducido es de 1 cifra"
+            } else {
+                if (numero >= 10 && numero < 100) {
+                return "El número introducido es de 2 cifras"
+                } else {
+                if (numero >= 100 && numero < 1000) {
+                    return "El número introducido es de 3 cifras"
+                } else {
+                    return "El número no es válido"
+                }
+                }
+            }
+        }
+        let resultadoTotal=comprobacion();
+        document.write(resultadoTotal);
+    </script>
+</body>
+</html>

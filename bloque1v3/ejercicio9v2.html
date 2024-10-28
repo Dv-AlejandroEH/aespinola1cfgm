@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9v2</title>
+</head>
+<body>
+    <script>
+        function resultado(){
+            let promedio = 0, notaTotal = 0, acumulador = 0;
+            for (acumulador > 0; acumulador < 3; acumulador++) {
+                nota = parseInt(prompt("Introduzca la nota"));
+                notaTotal = nota + notaTotal;
+            }
+            promedio = notaTotal / acumulador;
+            if (promedio >= 4) {
+                return "Regular"
+            } else {
+                return "Reprobado"
+            }
+        }
+        let resultadoTotal=resultado();
+        document.write(resultadoTotal);
+    </script>
+</body>
+</html>

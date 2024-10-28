@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio7</title>
+  </head>
+  <body>
+    <script>
+      let numero1 = 0, numero2 = 0, suma = 0, diferencia = 0, producto = 0, division = 0;
+      numero1 = parseInt(prompt("Introduzca el primer número"));
+      numero2 = parseInt(prompt("Introduzca el segundo número"));
+      if (numero1 > numero2) {
+        suma = numero1 + numero2;
+        diferencia = numero1 - numero2;
+        document.write("El numero 1 es mayor al número 2 <br>");
+        document.write("La suma de ambos números es: " + suma + "<br>");
+        document.write("La diferencia de ambos números es: " + diferencia);
+      } else {
+        producto = numero1 * numero2;
+        division = numero2 / numero1;
+        document.write("El numero 1 es menor al número 2 <br>");
+        document.write("El producto de ambos números es: " + suma + "<br>");
+        document.write("La división de ambos números es: " + division);
+      }
+    </script>
+  </body>
+</html>

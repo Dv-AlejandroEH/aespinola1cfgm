@@ -1,0 +1,25 @@
+h1 {
+    text-align: center;
+    background-color: aqua;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+h2 {
+    font-size: 30px;
+}
+.contenido{
+    background-color: blanchedalmond;
+    margin: 0 20px 30px 10px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+    display: inline-block;
+}
+.contenido:hover{
+    background-color: rgb(163, 150, 130);
+}
+a {
+    text-decoration: none;
+    color: black;
+}

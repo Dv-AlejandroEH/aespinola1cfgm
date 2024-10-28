@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10v2</title>
+</head>
+<body>
+    <script>
+        function recuentoDeCifras(){
+            let numero1 = 0;
+            numero1 = parseInt(
+                prompt("Introduzca un número positivo de una o dos cifras")
+            );
+            if (numero1 < 10) {
+                return "El número introducido es de 1 cifra"
+            } else {
+                return "El número introducido es de 2 cifras"
+            }
+        }
+        let resultadoTotal=recuentoDeCifras();
+        document.write(resultadoTotal);
+    </script>
+</body>
+</html>

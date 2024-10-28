@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio4v2</title>
+  </head>
+  <body>
+    <script>
+      let numero1=0, numero2=0, numero3=0, numero4=0;
+        function suma(){
+          numero1=parseInt(prompt("Introduzca el primer número"));
+          numero2=parseInt(prompt("Introduzca el segundo número"));
+          numero3=parseInt(prompt("Introduzca el tercer número"));
+          numero4=parseInt(prompt("Introduzca el cuarto número"));
+          suma=numero1+numero2+numero3+numero4
+          return "La suma de los números son: "+suma
+        }
+        function producto(){
+          numero1=parseInt(prompt("Introduzca el primer número"));
+          numero2=parseInt(prompt("Introduzca el segundo número"));
+          numero3=parseInt(prompt("Introduzca el tercer número"));
+          numero4=parseInt(prompt("Introduzca el cuarto número"));
+          producto=numero1*numero2*numero3*numero4
+          return "El producto de los números son: "+producto
+        }
+        let resultadoSuma=suma();
+        let resultadoProducto=producto();
+        document.write(resultadoSuma+"<br>"+resultadoProducto);
+    </script>
+  </body>
+</html>
