@@ -10,18 +10,19 @@
         function comparacionNumerica(num1, num2, num3) {
             if (num1==num2) {
                 if (num1==num3){
-                    if (num2=num3) {
+                    if (num2==num3) {
                         resultado=(num1+num2)*num3
-                        return "El resultado es: "+resultado
+                        documento="El resultado es: "+resultado
                     } else {
-                        return "Los números no son iguales"
+                        documento="Los números no son iguales"
                     }
                 } else {
-                    return "Los números no son iguales"
+                    documento="Los números no son iguales"
                 }
             } else {
-                return "Los números no son iguales"
+                documento="Los números no son iguales"
             }
+            return documento
         }
         let numero1=0, numero2=0, numero3=0, resultado=0;
         numero1=parseInt(prompt("Introduzca el primer número"));

@@ -15,10 +15,11 @@
             }
             promedio = notaTotal / acumulador;
             if (promedio >= 4) {
-                return "Regular"
+                documento="Regular"
             } else {
-                return "Reprobado"
+                documento="Reprobado"
             }
+            return documento
         }
         let resultadoTotal=resultado();
         document.write(resultadoTotal);

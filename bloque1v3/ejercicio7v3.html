@@ -31,7 +31,6 @@
                 let documento2=document.write("La suma de ambos números es: " + suma + "<br>");
                 let documento3=document.write("La diferencia de ambos números es: " + diferencia);
                 let textoEnPantalla=documento1+documento2+documento3
-                return ""
             } else {
                 productoFuncion(numero1, numero2)
                 divisionFuncion(numero1, numero2)
@@ -39,8 +38,8 @@
                 let documento2=document.write("El producto de ambos números es: " + producto + "<br>");
                 let documento3=document.write("La división de ambos números es: " + division);
                 let textoEnPantalla=documento1+documento2+documento3
-                return ""
             }
+            return textoEnPantalla
         }
         let numero1 = 0, numero2 = 0;
         numero1 = parseInt(prompt("Introduzca el primer número"));

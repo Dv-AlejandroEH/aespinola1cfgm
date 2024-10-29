@@ -9,18 +9,19 @@
     <script>
         function comprobacion(num){
             if (num >= 0 && num < 10) {
-                return "El número introducido es de 1 cifra"
+                documento="El número introducido es de 1 cifra"
             } else {
                 if (num >= 10 && num < 100) {
-                return "El número introducido es de 2 cifras"
+                documento="El número introducido es de 2 cifras"
                 } else {
                 if (num >= 100 && num < 1000) {
-                    return "El número introducido es de 3 cifras"
+                    documento="El número introducido es de 3 cifras"
                 } else {
-                    return "El número no es válido"
+                    documento="El número no es válido"
                 }
                 }
             }
+            return documento
         }
         let numero = 0;
         numero = parseInt(prompt("Introduzca un número entero positivo"));
