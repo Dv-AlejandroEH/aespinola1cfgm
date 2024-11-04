@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <script>
+        function calcularMultiplos() {
+            let numero=8
+            do {
+                document.write(numero)
+                numero=numero+8
+                if (numero<=500) {
+                    document.write("-")
+                } else {
+                    document.write("")
+                }
+            } while (numero<=500)
+            return "<br>"+ "Los multiplos llegaron hasta ser menor o igual a 500"
+        }
+        resultado=calcularMultiplos()
+        document.write(resultado)
+    </script>
+</body>
+</html>

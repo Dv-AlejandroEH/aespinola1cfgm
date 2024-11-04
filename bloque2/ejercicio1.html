@@ -8,24 +8,24 @@
 <body>
     <script>
         function mostrarPalabra(palabraElegida) {
-            let documento1="", documento2="", documento3="", documento4="", documento5="";
+            let documento
             switch (palabraElegida) {
                 case "casa":
-                    documento1="house"
+                    documento="house"
                     break;
                 case "mesa":
-                    documento2="table"
+                    documento="table"
                     break;
                 case "perro":
-                    documento3="dog"
+                    documento="dog"
                     break;
                 case "gato":
-                    documento4="cat"
+                    documento="cat"
                     break;
                 default:
-                    documento5=0
+                    documento=0
             }
-            return documento1+documento2+documento3+documento4+documento5
+            return documento
         }
         palabra=prompt("Elija una palabra a traducir, las opciones disponibles son: (casa, mesa, perro, gato)");
         let resultado=mostrarPalabra(palabra)
