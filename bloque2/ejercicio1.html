@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <script>
+        function mostrarPalabra(palabraElegida) {
+            let documento1="", documento2="", documento3="", documento4="", documento5="";
+            switch (palabraElegida) {
+                case "casa":
+                    documento1="house"
+                    break;
+                case "mesa":
+                    documento2="table"
+                    break;
+                case "perro":
+                    documento3="dog"
+                    break;
+                case "gato":
+                    documento4="cat"
+                    break;
+                default:
+                    documento5=0
+            }
+            return documento1+documento2+documento3+documento4+documento5
+        }
+        palabra=prompt("Elija una palabra a traducir, las opciones disponibles son: (casa, mesa, perro, gato)");
+        let resultado=mostrarPalabra(palabra)
+        if (resultado==0) {
+            document.write("La palabra "+palabra+" no se encuentra entre las opciones");
+        } else {
+            document.write("La traducción de la palabra "+palabra+" es "+resultado);
+        }
+    </script>
+</body>
+</html>
