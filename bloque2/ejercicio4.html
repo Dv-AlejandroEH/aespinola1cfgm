@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <script>
+        function suma() {
+            let sumaTotal=0, sumando=0;
+            do {
+                sumando=parseInt(prompt('Introduzca un valor a sumar (Introduzca el valor "9999" para obtener el resultado)'));
+                sumaTotal=sumando+sumaTotal
+            } while (sumando!=9999)
+            sumaTotal=sumaTotal-9999
+            return "La suma de todos los números es igual a "+sumaTotal
+        }
+        let resultado=suma();
+        document.write(resultado)
+    </script>
+</body>
+</html>
