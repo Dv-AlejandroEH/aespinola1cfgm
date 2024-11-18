@@ -25,7 +25,7 @@ h2 {
     justify-content: space-between;
     margin: 20px 40px 0px 40px;
 }
-a {
+.visible {
     background-color: #4c4c4c;
     padding: 10px;
     border-radius: 15px;
@@ -37,7 +37,7 @@ a {
     text-decoration: none;
     color: #FFC107;
 }
-a:hover {
+.visible:hover {
     background-color: #5a5a5a;
 }
 .imagen {
@@ -54,4 +54,10 @@ footer {
     position: fixed;
     width: 100%;
     border-top: 5px solid #333333;
+}
+.oculto {
+    display: block;
+    position: absolute;
+    text-decoration: none;
+    color: #FFC107;
 }
