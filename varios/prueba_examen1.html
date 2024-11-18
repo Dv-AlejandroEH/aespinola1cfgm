@@ -3,12 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
     <title>Prueba examen 1</title>
 </head>
 <body>
     <script>
-        
+        function mostrarNivel(nombre, preguntasTotales, respuestasCorrectas){
+            if (preguntasTotales>0) {
+                porcentaje=(respuestasCorrectas/preguntasTotales)*100
+                if (porcentaje>=90) {
+                documento="Nivel superior"
+                } else {
+                    if (porcentaje>=75 && porcentaje<90) {
+                        documento="Nivel medio"
+                    } else {
+                        if (porcentaje>=50 && porcentaje<75) {
+                            documento="Nivel regular"
+                        } else {
+                            documento="Fuera de nivel"
+                        }
+                    }
+                }
+            } else {
+                documento="El número de preguntas totales introducido no es válido"
+            }
+            return "El nombre del solicitante es: "+nombre+"<br>"+documento
+        }
+        let pedirNombre=prompt("Introduzca el nombre del solicitante");
+        pedirPreguntasTotales=parseInt(prompt("Introduzca el número de preguntas totales"));
+        pedirRespuestasCorrectas=parseInt(prompt("Introduzca el número de preguntas acertadas"));
+        let resultado=mostrarNivel(pedirNombre, pedirPreguntasTotales, pedirRespuestasCorrectas);
+        document.write(resultado)
     </script>
 </body>
 </html>
