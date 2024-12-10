@@ -37,19 +37,13 @@
 </head>
 <body>
     <form>
-        <input type="button" value="botón 1" onclick="comprobarBoton1()">
-        <input type="button" value="botón 2" onclick="comprobarBoton2()">
-        <input type="button" value="botón 3" onclick="comprobarBoton3()">
+        <input type="button" value="Botón 1" onclick="comprobarBoton(1)">
+        <input type="button" value="Botón 2" onclick="comprobarBoton(2)">
+        <input type="button" value="Botón 3" onclick="comprobarBoton(3)">
     </form>
     <script>
-        function comprobarBoton1() {
-            alert('El botón pulsado es el botón número 1');
-        }
-        function comprobarBoton2() {
-            alert('El botón pulsado es el botón número 2');
-        }
-        function comprobarBoton3() {
-            alert('El botón pulsado es el botón número 3');
+        function comprobarBoton(boton) {
+            alert('El botón pulsado es el botón número '+boton);
         }
     </script>
 </body>

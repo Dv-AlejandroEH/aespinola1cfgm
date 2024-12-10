@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+</head>
+<body>
+    <form>
+        <select onchange="mostrarPrecio()" name="pizzas" id="seleccion">
+            <option value="jamon">Jamón y Queso</option>
+            <option value="muzzarella">Muzzarella</option>
+            <option value="morrones">Morrones</option>
+        </select>
+        <input id="resultado" type="text">
+    </form>
+    <script>
+        function mostrarPrecio() {
+            let pizzas = document.getElementById('pizzas').value;
+            let resultado = document.getElementById('resultado').value;
+            resultado = pizzas
+        }
+    </script>
+</body>
+</html>
