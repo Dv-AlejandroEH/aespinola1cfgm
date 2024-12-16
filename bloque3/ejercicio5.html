@@ -7,18 +7,27 @@
 </head>
 <body>
     <form>
-        <select onchange="mostrarPrecio()" name="pizzas" id="seleccion">
+        <select onchange="mostrarPrecio(this.value)" name="pizzas" id="seleccion">
             <option value="jamon">Jamón y Queso</option>
             <option value="muzzarella">Muzzarella</option>
             <option value="morrones">Morrones</option>
         </select>
-        <input id="resultado" type="text">
+        <input id="resultado" type="text" disabled>
     </form>
     <script>
-        function mostrarPrecio() {
-            let pizzas = document.getElementById('pizzas').value;
-            let resultado = document.getElementById('resultado').value;
-            resultado = pizzas
+        resultado = document.getElementById('resultado');
+        function mostrarPrecio(pizza) {
+            switch (pizza) {
+                case 'jamon':
+                    resultado.value = '10€'
+                    break;
+                case 'muzzarella':
+                    resultado.value = '20€'
+                    break;
+                case 'morrones':
+                    resultado.value = '30€'
+                    break;
+            }
         }
     </script>
 </body>
