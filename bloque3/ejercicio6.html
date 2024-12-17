@@ -4,6 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 6</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type="number"], input[type="text"] {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="button"] {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="button"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <form>
@@ -12,27 +59,27 @@
             <option value="queso">Queso: 4€</option>
             <option value="jamon">Jamón y queso: 6€</option>
             <option value="especial">Especial: 10€</option>
-        </select> <br> <br>
+        </select>
         <label for="cantidad">Seleccione la cantidad:</label>
-        <input type="number" id="cantidad"> <br> <br>
+        <input type="number" id="cantidad">
         <label for="resultado">Resultado:</label>
-        <input type="text" id="resultado" disabled> <br> <br>
-        <input type="button" value="calcular" onclick="calcularPrecio()">
+        <input type="text" id="resultado" disabled>
+        <input type="button" value="Calcular" onclick="calcularPrecio()">
     </form>
     <script>
         function calcularPrecio() {
             let pizza = document.getElementById('pizza');
-            document.getElementById('cantidad');
-            document.getElementById('resultado');
+            let cantidad = document.getElementById('cantidad');
+            let resultado = document.getElementById('resultado');
             switch (pizza.value) {
                 case 'queso':
-                    resultado.value = cantidad.value*4+'€';
+                    resultado.value = cantidad.value * 4 + '€';
                     break;
                 case 'jamon':
-                    resultado.value = cantidad.value*6+'€';
+                    resultado.value = cantidad.value * 6 + '€';
                     break;
                 case 'especial':
-                    resultado.value= cantidad.value*10+'€';
+                    resultado.value = cantidad.value * 10 + '€';
                     break;
                 default:
                     alert('Los valores introducidos no son correctos');
