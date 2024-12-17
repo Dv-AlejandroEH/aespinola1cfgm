@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8</title>
+</head>
+<body>
+    <form>
+        <label for="edad">Introduzca si es mayor de edad o no</label> <br> <br>
+        <label for="si">Sí</label>
+        <input type="radio" id="si" name="sino">
+        <label for="no">No</label>
+        <input type="radio" id="no" name="sino"> <br> <br>
+        <input type="button" onclick="comprobarEdad()" id="resultado" value="Ingresar a la página">
+    </form>
+    <script>
+        function comprobarEdad() {
+            const si = document.getElementById('si');
+            const no = document.getElementById('no');
+            if (si.checked) {
+                alert('Puede ingresar a la página');
+            }
+            if (no.checked) {
+                alert('No puede ingresar a la página, para ingresar a la página debe de ser mayor de edad');
+            }
+        }
+    </script>
+</body>
+</html>
