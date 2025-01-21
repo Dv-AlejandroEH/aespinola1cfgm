@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type="number"], input[type="text"] {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="button"] {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="button"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <script src="JS/ejercicio6.js"></script>
+    <form>
+        <label for="pizza">Seleccione la pizza:</label>
+        <select name="pizza" id="pizza">
+            <option value="4">Queso</option>
+            <option value="6">Jamón y queso</option>
+            <option value="10">Especial</option>
+        </select>
+        <label for="cantidad">Seleccione la cantidad:</label>
+        <input type="number" id="cantidad">
+        <label for="resultado">Resultado:</label>
+        <input type="text" id="resultado" disabled>
+        <input type="button" value="Calcular" onclick="calcularPrecio()">
+    </form>
+</body>
+</html>

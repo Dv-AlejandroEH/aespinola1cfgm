@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="button"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: #0056b3;
+}
+    </style>
+</head>
+<body>
+    <script src="JS/ejercicio7.js"></script>
+    <form>
+        <label>Introduzca los deportes que practica</label> <br><br>
+        <label for="futbol">Fútbol: </label>
+        <input type="checkbox" name="futbol" id="futbol"> <br><br>
+        <label for="basket">Básket: </label>
+        <input type="checkbox" name="basket" id="basket"> <br><br>
+        <label for="tenis">Tenis: </label>
+        <input type="checkbox" name="tenis" id="tenis"> <br><br>
+        <input type="button" value="Mostrar los deportes que ha elegido" onclick="mostrarDeportes()">
+    </form>
+</body>
+</html>
